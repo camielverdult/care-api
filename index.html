@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PintApple API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        body {
+            background-color: rgb(40, 40, 44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .animate-character
+        {
+            background-image: linear-gradient(
+                    -225deg,
+                    #231557 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%
+            );
+
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            animation: textclip 3s linear infinite;
+            
+            font-size: 50px;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }      
+    </style>
+</head>
+<body>
+    <p class="animate-character">Welcome to the PintApple API.</p>
+</body>
+</html>
